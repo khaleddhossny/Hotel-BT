@@ -1,0 +1,90 @@
+/* in this stylesheet we will stack everything over eachother */
+/* first step in responsivness is to defloat any floated element */
+/* nav bar */
+/* INdex page */
+#nav-bar .logo{
+  float:none;
+  text-align: center;
+}
+#nav-bar ul{
+  float:none;
+  list-style: none;
+}
+#nav-bar ul li{
+ float:none;
+}
+/* nav bar elemnts are now defloated but the padding is very big so change it from a elemnt in nav-bar*/
+#nav-bar ul li a{
+  padding:5px;
+  border-bottom: #444 dotted 2px;
+  margin-bottom: 10px;
+}
+
+#Showcase{
+  height:100%
+}
+
+#Showcase .Showcase-content{
+  padding-top:60px;
+  padding-bottom:30px;
+}
+
+/* home-info */
+/* the img in the hpome info section we need it to dissaper when we hit small screen sizes */
+#Home-info{
+  /* the reason about doing that is the read more button on an actual iphone didn't appear so by increasing the heigh it appears */
+  height:100%;
+}
+
+#Home-info h2{
+  width:100%
+}
+
+#Home-info .Info-img{
+   display:none;
+}
+#Home-info .Info-Content{
+  float:none;
+  width: 100%;
+  text-align: center;
+}
+
+/*three boxes down*/
+.Box{
+  float:none;
+  width:100%;
+  padding:50px;
+  text-align: center;
+}
+
+/* About page */
+#about-info .about-content{
+  float:none;
+  width:100%;
+}
+
+#about-info .about-img{
+  float:none;
+  width: 100%;
+  margin-top:30px ;
+}
+
+.large-heading{
+  text-align: center;
+}
+/* the testimonials */
+  /* padding-top: 40px; */
+  /* it could be done like that or could be done by making the height of the testimonials ion the main style sheet 100% */
+
+  /* contact page */
+  #contact-info p{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #our-contact-info .Box{
+    /* and here we don't want to change all boxs just the boxes in that section*/
+    border-bottom: #444 dotted 3px;
+  }
+
+

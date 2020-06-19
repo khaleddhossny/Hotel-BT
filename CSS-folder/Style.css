@@ -1,0 +1,333 @@
+/* this project isn't responsive at all no media queries or j queries */
+/* Reset */
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+
+/* utility class:class which is not specific for any field so you can use it everywhere */
+.Container{
+  /* the reason for making this class is that we want to have a container around the nav bar and the elements in the middle of it whenever the browser window width exceeds the max width which is somehow responsive */
+   max-width: 960px;
+   overflow: auto;
+   margin: auto;
+   /* margin:auto puts the elemnts in the container in the middle */
+   padding-right: 20px;
+   padding-left: 20px;
+   /* another comment:if the nav bar was inside the countainer we would have a black space when the max width is excedded which is very ugly */
+}
+
+.Leader_of_Heading{
+   color:#f7c08a;
+}
+
+.Leader-paragrapgh{
+   font-size: 20px;
+}
+
+.button{
+   /* this class is used for buttons and links */
+   /* display:inline-block;inline block for the padding to appear in the correct way */
+   display:inline-block;
+   background-color: #333;
+   color: white;
+   padding:12px 20px;
+   border: none;
+   /* because the button have a border */
+   border-radius: 5px;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+.button:hover{
+   color:#333;
+   background-color: #f7c08a;
+}
+
+.Button-light{
+   color:#333;
+   background-color:#f4f4f4;
+}
+
+.Dark-bg{
+    background-color: #333;
+    color:#f4f4f4;
+}
+
+.light-bg{
+    background-color:#f4f4f4;
+    color:#333;
+}
+
+.primary-bg{
+    color: #333;
+    background-color:#f7c08a;
+}
+
+.clear{
+   clear: both;
+}
+
+.padding-y{
+   padding: 30px 0;
+}
+
+.large-heading{
+   font-size:40px;
+   line-height: 1.2;
+}
+
+
+/* Main Styling */
+html,body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.7em;
+   font-weight: 600;
+}
+a{
+   text-decoration: none;
+   color:#333;
+}
+p{
+   margin: 10px 0;
+}
+h1,h2,h3{
+   padding-bottom: 20px;
+}
+
+/* Styling of the index page */
+
+/* nav bar */
+#nav-bar{
+   background-color: #333;
+   color: white;
+   overflow: auto;
+   /* overflow:auto to make the background always appear */
+}
+#nav-bar a{
+   color: white;
+   /* color of text links must be changed in the a element */
+}
+#nav-bar .logo{
+   float: left;
+   padding-top:20px;
+}
+#nav-bar ul{
+   float: right;
+   list-style: none;
+   /* list style none remove the bullets */
+}
+#nav-bar ul li{
+   float:left;
+}
+#nav-bar ul li a{
+   display: block;
+   /* we need this block display to use padding among a elemnts*/
+   padding:20px;
+   text-align: center;
+   /* to make sure that the text is written in the center*/
+}
+#nav-bar ul li a:hover,
+#nav-bar ul li a.Current{
+   background-color:#444;
+   color:#f7c08a;
+   /* the reason about the current class is that we need the current page have the same styling as the hovering over the pages styling */
+}
+
+/* Show case */
+#Showcase{
+   background: url('../img/showcase.jpg') no-repeat center center/cover ;
+   height:600px;
+}
+
+#Showcase .Showcase-content{
+   color: white;
+   text-align: center;
+   padding-top: 170px;
+   /* padding top for the show case content to be in the middle of the showcontent background */
+   overflow: hidden;
+}
+
+#Showcase .Showcase-content h1{
+   font-size: 60px;
+   line-height: 1.2em;
+}
+
+#Showcase .Showcase-content p{
+   padding-bottom: 20px;
+   /* this padding bottom is to push the about button underneath */
+   line-height:1.7em;
+}
+
+/* Home info */
+#Home-info{
+   height: 450px;
+}
+
+#Home-info .Info-img{
+   background-image: url('../img/photo-1.jpg');
+   float: left;
+   min-height:100%;
+   /* min height 100 for the image to be all over the place */
+   width:50%;
+}
+
+#Home-info .Info-Content{
+   float: right;
+   height: 100%;
+   width: 50%;
+   text-align: center;
+   padding:50px 30px;
+   overflow: hidden;
+   /* over flow hidden is for scroll bars to eliminate them */
+}
+
+#Home-info .Info-Content p{
+   line-height: 1.7em;
+   padding-bottom:30px ;
+}
+
+/* features */
+.Box{
+   float:left;
+   width:33.3%;
+   padding:50px;
+   text-align: center;
+}
+
+#features .Box i{
+   margin-bottom: 10px;
+   /* #features .Box i doesn't work */
+}
+
+/* footer */
+#main-footer{
+   text-align: center;
+   background-color: #444;
+   padding:20px;
+   color: white;
+   font-size: 20px;
+   height:100%;
+}
+
+/* end of styling of the index page */
+
+/* styling about page */
+/* section of info */
+#about-info .about-content{
+   float:left;
+   width:50%;
+   /* min-height:100%; */
+}
+
+#about-info .about-img{
+   float:right;
+   width:50%;
+   min-height:100%;
+   overflow: hidden;
+}
+
+#about-info .about-img img{
+   display:block;
+   /* we need dsiplay block to use margin:auto */
+   margin:auto;
+   width:80%;
+   /* this width for not getting out of the container */
+   border-radius: 50%;
+   /* border radius:50% gives us the circular shape we want*/
+}
+
+#about-info .about-content p{font-weight: 500;}
+
+/* testimonial */
+#testimonials{
+   background: url('../img/test-bg.jpg') no-repeat center center/cover;
+   height:100%;
+   padding-top:100px;
+}
+
+
+#testimonials h2{
+   color: white;
+   padding-bottom: 60px;
+   text-align: center;
+}
+
+#testimonials .testimonial{
+   padding:20px;
+   margin-bottom:40px;
+   /* margin bottom is what keeps the two testimonials away from each other*/
+   border-radius: 5px;
+   opacity:0.9
+   /* opacity tale values from 0 to 1 and the highr the value the lower the transparency*/
+}
+
+#testimonials .testimonial img{
+   width:100px;
+   float:left;
+   border-radius:50%;
+   display:block;
+   margin-right:20px;
+}
+
+/* end of about page styling */
+
+/* styling of the contact page */
+/* upper part */
+#contact-info .form-group{
+   margin-bottom: 20px;
+}
+
+#contact-info label{
+   display: block;
+   margin-bottom:5px;
+   /* margin or padding*/
+}
+
+#contact-info input,
+#contact-info textarea{
+   width: 100%;
+   padding:20px;
+   border:#ddd solid 1px;
+   border-radius: 5px;
+}
+
+#contact-info textarea{
+   height:200px;
+}
+
+#contact-info input:focus,
+#contact-info textarea:focus{
+   outline: none;
+   border-color: #f7c08a;
+   /* focus is a property like hover which allows the change of the propreties of the input areas when you change them */
+}
+
+#contact-info button{
+   margin-bottom: 20px;
+}
+/* second part */
+
+#our-contact-info .box{
+  float:left;
+  overflow: hidden;
+  width:33.3%;
+  text-align: center;
+}
+
+#our-contact-info .box i{
+   margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

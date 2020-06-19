@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the website of the most comfortable hotel in boston">
+  <meta name="keywords" content="Hotel,Boston hotel,new england hotel">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <!-- the above link is the link of font awseome which allows us to use icons and resize them-->
+  <link rel="stylesheet" href="CSS-folder/Style.css">
+  <link rel="stylesheet" href="CSS-folder/Mobile.css" media="screen and (max-width:768px)">
+  <!-- so the above style sheet will be activated when the screen is 768 width or less:any small device-->
+  <title>Hotel Bt | Welcome page</title>
+</head>
+<body>
+  <!-- page division:header and footer and anything between them is a section -->
+ <header>
+
+   <nav id="nav-bar">
+     <div class="Container">
+       <h1 class="logo"> <a href="index.html">HBT</a></h1>
+       <ul>
+         <li><a class="Current" href="index.html">Home</a></li>
+         <li><a href="About.html">About</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+       </ul>
+     </div>
+   </nav>
+
+   <div id="Showcase">
+     <div class="Container">
+       <div class="Showcase-content">
+       <h1> <span class="Leader_of_Heading"> Enjoy</span> Your Stay</h1>
+       <!-- the reason of doing this spam is that we want the enjoy word alone to be orange-->
+       <p class="Leader-paragrapgh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat recusandae itaque est fugiat tempore!</p>
+       <!--the leader paragrapgh is becuase the font of this paragrapg is bigger than any of the other ones in the page-->
+       <a href="About.html" class="button">About Our Hotel</a>
+      </div>
+      <!--the reason for the show case content is for changing the color of the h and p all toghther-->
+     </div>
+   </div>
+ </header>
+
+ <section id="Home-info" class="Dark-bg">
+   <!-- the next two div are for the the image area and the text area -->
+   <div class="Info-img"></div>
+   <div class="Info-Content">
+     <h2> <span class="Leader_of_Heading">The History</span> Of Our Hotel</h2>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis vero facere laudantium ducimus dolorum dolore quaerat voluptates illum atque temporibus hic laboriosam, deserunt fugiat mollitia voluptatem veniam, impedit id quia? Ullam consequuntur, quis dolor beatae distinctio fugit perferendis ratione necessitatibus!</p>
+   
+    <a href="About.html" class="button Button-light">Read More</a>
+    <!-- button button-light means that this button has all the traits of the button but we will add extra traits to it by the button light class-->
+  </div>
+ </section>
+
+
+  <section id="features">
+   <div class="Box light-bg">  
+     <i class="fas fa-hotel fa-3x" ></i>
+     <!-- the above is the link of the hotel icon anf fa-3x is for rsizing of 3*original size-->
+     <h3>Great Location</h3>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, officia.</p>
+   </div>
+
+   <div class="Box primary-bg">
+    <i class="fas fa-utensils fa-3x" ></i>
+    <h3>Free Meals</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, officia.</p>
+   </div>
+
+   <div class="Box light-bg">
+    <i class="fas fa-dumbbell fa-3x" ></i>
+    <h3>Fitness Room</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, officia.</p>
+   </div>
+   <!-- class"Box light-bg" means that this div has two classes the box class and the light bg class -->
+  </section>
+   <div class="clear"></div>
+   
+  <footer id="main-footer">
+    <p>
+      Hotel BT &copy 2020,All Rights Reserved
+    </p>
+  </footer>
+</body>
+</html>
